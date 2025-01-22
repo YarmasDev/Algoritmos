@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - TechHelp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TechHelp</div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#contact-form">Contacto</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#live-chat">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Bienvenido a TechHelp</h1>
+            <p>Estamos aquí para ayudarte con todas tus necesidades técnicas</p>
+        </section>
+
+        <section id="contact-form" class="card">
+            <h2>Contáctanos</h2>
+            <form id="support-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Describe tu problema:</label>
+                    <textarea id="issue" name="issue" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+        <section id="faq" class="card">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cómo puedo restablecer mi contraseña?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Puedes restablecer tu contraseña haciendo clic en el enlace "Olvidé mi contraseña" en la página de inicio de sesión. Sigue las instrucciones enviadas a tu correo electrónico para crear una nueva contraseña segura.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cómo actualizo mi software?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Para actualizar tu software, ve a la sección "Actualizaciones" en tu panel de control y haz clic en "Buscar actualizaciones". Si hay actualizaciones disponibles, sigue las instrucciones en pantalla para instalarlas.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cómo puedo contactar al soporte técnico directamente?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Puedes contactar a nuestro equipo de soporte técnico a través del formulario de contacto en esta página, iniciando un chat en vivo, o llamando a nuestro número de atención al cliente: +1 (800) 123-4567.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-chat" class="card" style="display: none;">
+            <h2>Chat en Vivo (Alternativo)</h2>
+            <div id="chat-messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Escribe tu mensaje aquí...">
+                <button id="send-chat" class="btn">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TechHelp. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src='//fw-cdn.com/12398196/4827375.js' chat='true'></script>
+</body>
+</html>
+
